@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SkyrimTogether</Name>
+  <Repository>tiltedphoques/st-game-server</Repository>
+  <Registry>https://hub.docker.com/r/tiltedphoques/st-game-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://wiki.tiltedphoques.com/tilted-online/general/overview</Project>
+  <Overview>Skyrim Together Game Server&#xD;
+&#xD;
+This version is for the currently released Nightly Builds version, which only supports Skyrim Special Edition version 1.5.97&#xD;
+&#xD;
+Instructions for how to install the client and downgrade your game version can be found on the official ducomentation here:&#xD;
+https://wiki.tiltedphoques.com/tilted-online/guide/getting-started-with-nightly-builds/installation&#xD;
+&#xD;
+you can add the following post arguments:&#xD;
+&#xD;
+-token XXXXX: Sets the token value, by default there is no token. This can be used as a way to password protect your server.&#xD;
+&#xD;
+-premium: Enable premium tick rates, we suggest you don't use this on high latency, poor connections.&#xD;
+&#xD;
+-name "X X X": Sets the server name for public listing.</Overview>
+  <Category>GameServers:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://styles.redditmedia.com/t5_3bmxv/styles/communityIcon_73nz8dfurgf51.png?width=256&amp;amp;s=48d6c0019b4b4d18ff52b8d46c14f3873350d34b</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1651433274</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Skyrim Together Game Server&#xD;
+&#xD;
+This version is for the currently released Nightly Builds version, which only supports Skyrim Special Edition version 1.5.97&#xD;
+&#xD;
+Instructions for how to install the client and downgrade your game version can be found on the official ducomentation here:&#xD;
+https://wiki.tiltedphoques.com/tilted-online/guide/getting-started-with-nightly-builds/installation&#xD;
+&#xD;
+you can add the following post arguments:&#xD;
+&#xD;
+-token XXXXX: Sets the token value, by default there is no token. This can be used as a way to password protect your server.&#xD;
+&#xD;
+-premium: Enable premium tick rates, we suggest you don't use this on high latency, poor connections.&#xD;
+&#xD;
+-name "X X X": Sets the server name for public listing.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10578</HostPort>
+        <ContainerPort>10578</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Container Port 1" Target="10578" Default="10578" Mode="udp" Description="Container Port: 10578" Type="Port" Display="always" Required="true" Mask="false">10578</Config>
+</Container>
